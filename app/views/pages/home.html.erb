@@ -1,2 +1,23 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="window">
+  <%= link_to root_path do %>
+    <span id="logotype">VALOCH</span>
+  <% end %>
+  <div class="social_networks">
+    <%= link_to "https://www.facebook.com/valentin.selve", class: "social_networks_icons", target: "_blank" do %>
+      <i class="fab fa-facebook-square"></i>
+    <% end %>
+    <%= link_to "https://www.instagram.com/_valoch/", class: "social_networks_icons", target: "_blank" do %>
+      <i class="fab fa-instagram"></i>
+    <% end %>
+    <%= link_to "https://www.linkedin.com/in/valentinselve/", class: "social_networks_icons", target: "_blank" do %>
+      <i class="fab fa-linkedin"></i>
+    <% end %>
+    <%= link_to "https://github.com/lavaloch", class: "social_networks_icons", target: "_blank" do %>
+      <i class="fab fa-github"></i>
+    <% end %>
+  </div>
+  <div class="presentation">
+    <span>Hello !<br>I am <%= link_to "Valentin", "#", class: "presentation_link"  %> and I used to be <%= link_to "Project Manager", "#", class: "presentation_link"  %>.<br>Now, I am <%= link_to "Front-end developer", "#", class: "presentation_link"  %> and <%= link_to "UX Designer", "#", class: "presentation_link"  %>.<br></span>
+  </div>
+</div>
+

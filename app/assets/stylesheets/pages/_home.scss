@@ -1,1 +1,84 @@
 // Specific CSS for your home-page
+.window {
+  width: 100vm;
+  height: 100vh;
+  border: 10px solid $lime;
+  position: relative;
+}
+
+#logotype {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-family: 'Permanent Marker', cursive;
+  color: $lime;
+  font-size: 2.5em;
+  height: 65px;
+}
+
+.social_networks {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  height: 65px;
+  display: flex;
+  justify-content: space-around;
+  width: 175px;
+  &_icons:link {
+    font-size: 1.5em;
+    line-height: 65px;
+    color: $purple;
+    text-decoration: none;
+  }
+  &_icons:visited {
+    font-size: 1.5em;
+    line-height: 65px;
+    color: $purple;
+    text-decoration: none;
+  }
+  &_icons:hover {
+    font-size: 1.5em;
+    line-height: 65px;
+    color: $lime;
+    text-decoration: none;
+  }
+  &_icons:active {
+    font-size: 1.5em;
+    line-height: 65px;
+    color: $purple;
+    text-decoration: none;
+  }
+}
+
+.presentation {
+  color: $purple;
+  font-size: 3em;
+  margin: auto;
+  line-height: 2em;
+  width: 80%;
+  padding-top: 18%;
+  &_link:link {
+    padding: 5px;
+    color: $lime;
+    text-decoration: none;
+    border: 8px solid transparent;
+  }
+  &_link:visited {
+    padding: 5px;
+    color: $lime;
+    text-decoration: none;
+    border: 8px solid transparent;
+  }
+  &_link:hover {
+    padding: 5px;
+    color: $lime;
+    text-decoration: none;
+    border: 8px solid $lime;
+  }
+  &_link:active {
+    padding: 5px;
+    color: $lime;
+    text-decoration: none;
+    border: 8px solid transparent;
+  }
+}
