@@ -16,8 +16,20 @@
       <i class="fab fa-github"></i>
     <% end %>
   </div>
-  <div class="presentation">
-    <span>Hello !<br>I am <%= link_to "Valentin", about_path, class: "presentation_link"  %> and I used to be <%= link_to "Project Manager", pm_path, class: "presentation_link"  %>.<br>Now, I am <%= link_to "Front-end developer", "#", class: "presentation_link"  %> and <%= link_to "UX Designer", "#", class: "presentation_link"  %>.<br></span>
+  <div class="work">
+    <span class="work_title">Project Manager</span>
+    <%= link_to alternance_path, class: "work_items_link" do %>
+      <div class="work_items">
+        <%= image_tag "logo_em.png", class: "logo_work", alt: "" %>
+        <p>Design and implementation of web projects from the design phase to delivery of more than 20 projects dedicated to law firms.</p>
+      </div>
+    <% end %>
+    <%= link_to freelance_path, class: "work_items_link" do %>
+      <div class="work_items">
+        <%= image_tag "midas.png", class: "logo_midas", alt: "" %>
+        <p>Design of new user stories in official website and development of Midas Connect commercial offer. Freelance for MKTG | Dentsu Aegis</p>
+      </div>
+    <% end %>
   </div>
+  <%= link_to "Go back", root_path, class: "go_back_link" %>
 </div>
-

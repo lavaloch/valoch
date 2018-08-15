@@ -1,0 +1,64 @@
+.work {
+  color: $purple;
+  font-size: 1.5em;
+  margin: auto;
+  width: 80%;
+  height: 80vh;
+  padding-top: 10%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  &_title {
+    font-size: 3em !important;
+  }
+}
+
+.logo_work {
+  width: 185px;
+  height: 70.90px;
+}
+
+.logo_midas {
+  width: 185px;
+  height: 117.60px;
+}
+
+.work_items {
+  padding: 30px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 185px;
+}
+
+.work_items > p {
+  padding-left: 50px;
+  margin-bottom: 0px;
+  color: $purple;
+}
+
+.work_items_link:link {
+  border: 8px solid transparent;
+  color: $purple;
+  text-decoration: none;
+}
+
+.work_items_link:selected {
+  border: 8px solid transparent;
+  color: $purple;
+  text-decoration: none;
+}
+
+.work_items_link:hover {
+  border: 8px solid $lime;
+  color: $purple;
+  text-decoration: none;
+}
+
+.work_items_link:active {
+  border: 8px solid transparent;
+  color: $purple;
+  text-decoration: none;
+}

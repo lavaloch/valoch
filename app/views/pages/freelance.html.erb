@@ -16,8 +16,12 @@
       <i class="fab fa-github"></i>
     <% end %>
   </div>
-  <div class="presentation">
-    <span>Hello !<br>I am <%= link_to "Valentin", about_path, class: "presentation_link"  %> and I used to be <%= link_to "Project Manager", pm_path, class: "presentation_link"  %>.<br>Now, I am <%= link_to "Front-end developer", "#", class: "presentation_link"  %> and <%= link_to "UX Designer", "#", class: "presentation_link"  %>.<br></span>
+  <%= image_tag "midas.png", class: "logo_alternance_em", alt: "" %>
+  <div class="alternance_work">
+      <%= link_to "", "https://www.ravet-avocats.com/", class: "work_1", target: "_blank" %>
+      <%= link_to "", "https://www.august-debouzy.com/fr/", class: "work_2", target: "_blank" %>
+      <%= link_to "", "https://www.lazareff-lebars.com/", class: "work_3", target: "_blank" %>
+    </div>
   </div>
+  <%= link_to "Go back", pm_path, class: "go_back_link" %>
 </div>
-
