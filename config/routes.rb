@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   get '/project-manager', to: 'pages#project_manager', as: 'pm'
   get '/project-manager/alternance', to: 'pages#alternance', as: 'alternance'
   get '/project-manager/mktg-midas', to: 'pages#freelance', as: 'freelance'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/front-end-developper', to: 'pages#front', as: 'front'
+  get '/ux-designer', to: 'pages#ux', as: 'ux'
+  get '/full-stack-designer/e-cotiz', to: 'pages#fullstackdesigner', as: 'fullstack'
 end

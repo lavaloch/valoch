@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :about, :project_manager, :alternance, :freelance]
+  skip_before_action :authenticate_user!, only: [:home, :about, :project_manager, :alternance, :freelance, :front, :ux, :fullstackdesigner]
 
   def home
   end
@@ -14,5 +14,14 @@ class PagesController < ApplicationController
   end
 
   def freelance
+  end
+
+  def front
+  end
+
+  def ux
+  end
+
+  def fullstackdesigner
   end
 end
